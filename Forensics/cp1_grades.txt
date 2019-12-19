@@ -1,0 +1,34 @@
+Checkpoint 1 Grade Report for zjn1746 (partner: yangyu12)
+Graded Commit:
+    SHA1: 0d99c86d9ff25fb373e333d9425d42b1b6a0761e
+    Date: Sun Nov 17 15:14:22 2019 -0600
+
+Total: 20 / 20
+
+Details:
+1.1 Login Name (2 / 2)
+    cp1.1.login.txt (2 / 2)
+        +2 login name: correct
+1.2 Timezone (2 / 2)
+    cp1.2.timezone.txt (2 / 2)
+        +2 timezone: correct
+1.3 Conversations (4 / 4)
+    cp1.3.usernames.txt (4 / 4)
+        +2 usernames: correct
+        +1 order: correct
+        +1 exclude one-way messages: correct
+1.4 Evidence File (4 / 4)
+    cp1.4.filename.txt (2 / 2)
+        +1 file name: correct
+        +1 file hash: correct
+    cp1.4.modtime.txt (2 / 2)
+        +2 modified time: correct
+1.5 Attack (8 / 8)
+    cp1.5.attacktime.txt (1 / 1)
+        +1 attack time: correct
+    cp1.5.attackerip.txt (4 / 4)
+        +2 attacker ip #1: correct
+        +2 attacker ip #2: correct
+    cp1.5.victimip.txt (3 / 3)
+        +1 victim ip: correct
+        +2 victim ip during the attack: correct

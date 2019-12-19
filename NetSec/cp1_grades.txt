@@ -1,0 +1,14 @@
+cp1.1.ip.txt: +1, correct local network host IPs
+cp1.1.mac.txt: +1, correct local network host MACs
+cp1.1.gw.txt: +1, correct gateway IP
+cp1.1.gw.txt: +1, correct gateway MAC
+cp1.1.portscan.txt: +1, correct port scanner IP
+cp1.1.dns.txt: +2, correct dns query name and answer IP
+cp1.1.http.txt: +1, correct http request URL
+cp1.2.dig.txt: +2, correct dig A record IP
+cp1.2.curl.txt: +2, correct http response
+cp1.3.nmap.txt: +2, correct hosts/ports
+cp1.3.synscan.py: +4, correct ports
+cp1.3.synscan.py: +2, correct RST
+------------------------------
+Score for ['zjn1746', 'yangyu12']: 20/20

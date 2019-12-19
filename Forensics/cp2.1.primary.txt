@@ -1,0 +1,6 @@
+###Solution Example: ###
+#ubuntu
+#18.04
+Ubuntu
+15.10
+

@@ -1,0 +1,103 @@
+============================= test session starts ==============================
+Grading MP4 CP2 for zjn1746
+
+test_cp2.py::TestPassive::test_spoof Section score: 8 / 8
+
+test_cp2.py::TestPassive::test_dns_works Section score: 2 / 2
+
+test_cp2.py::TestPassive::test_dns_output Section score: 2 / 5
+Section test errors: missing hostname output for random subdomain query
+missing/incorrect hostname output for www.bankofbailey.com. query
+Program execution errors:
+	Exception in thread Thread-5:
+	Traceback (most recent call last):
+	  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+	    self.run()
+	  File "/usr/lib/python3.6/threading.py", line 864, in run
+	    self._target(*self._args, **self._kwargs)
+	  File "/usr/local/lib/python3.6/dist-packages/scapy/sendrecv.py", line 886, in sniff
+	    r = prn(p)
+	  File "zjn1746/NetSec/cp2.1.passive.py", line 64, in interceptor
+	    print(chr(42)+"hostaddr:"+packet.getlayer(DNS).an.rdata)
+	AttributeError: 'NoneType' object has no attribute 'rdata'
+	
+
+test_cp2.py::TestPassive::test_http_works Section score: 0 / 2
+Section test errors: passive http failed
+passive http failed for www.bankofbailey.com/long.html
+Program execution errors:
+	Exception in thread Thread-5:
+	Traceback (most recent call last):
+	  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+	    self.run()
+	  File "/usr/lib/python3.6/threading.py", line 864, in run
+	    self._target(*self._args, **self._kwargs)
+	  File "/usr/local/lib/python3.6/dist-packages/scapy/sendrecv.py", line 886, in sniff
+	    r = prn(p)
+	  File "zjn1746/NetSec/cp2.1.passive.py", line 68, in interceptor
+	    print(chr(42)+"basicauth:"+re.search(r'Authorization: Basic (.*)', packet.getlayer(Raw).load.decode()).group()[21:])
+	AttributeError: 'NoneType' object has no attribute 'group'
+	
+
+test_cp2.py::TestPassive::test_http_output Section score: 0 / 4
+Section test errors: missing/incorrect session cookie output
+missing/incorrect basicauth output 1
+missing/incorrect basicauth output 2
+Program execution errors:
+	Exception in thread Thread-5:
+	Traceback (most recent call last):
+	  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+	    self.run()
+	  File "/usr/lib/python3.6/threading.py", line 864, in run
+	    self._target(*self._args, **self._kwargs)
+	  File "/usr/local/lib/python3.6/dist-packages/scapy/sendrecv.py", line 886, in sniff
+	    r = prn(p)
+	  File "zjn1746/NetSec/cp2.1.passive.py", line 68, in interceptor
+	    print(chr(42)+"basicauth:"+re.search(r'Authorization: Basic (.*)', packet.getlayer(Raw).load.decode()).group()[21:])
+	AttributeError: 'NoneType' object has no attribute 'group'
+	
+
+test_cp2.py::TestPassive::test_restore Section score: 4 / 4
+
+test_cp2.py::TestActiveDNS::test_dns_interception Section score: 8 / 12
+Section test errors: missing/invalid dig response for smtp.bankofbailey.com
+
+test_cp2.py::TestActiveDNS::test_dns_packets Section score: 13 / 13
+
+test_cp2.py::TestActiveHTTPShortScript::test_simple_http Section score: 15 / 18
+Section test errors: incorrect HTTP response ACK ack number received at server
+incorrect server FIN+ACK seq number received at client
+incorrect/missing ACK to FIN+ACK received by server
+Section score: 15 / 18
+Section test errors: incorrect HTTP response ACK ack number received at server
+incorrect server FIN+ACK seq number received at client
+incorrect/missing ACK to FIN+ACK received by server
+Section score: 15 / 18
+Section test errors: incorrect HTTP response ACK ack number received at server
+incorrect server FIN+ACK seq number received at client
+incorrect/missing ACK to FIN+ACK received by server
+
+test_cp2.py::TestActiveHTTPShortScript::test_content_len Section score: 1 / 1
+
+test_cp2.py::TestActiveHTTPShortScript::test_long Section score: 2 / 2
+
+test_cp2.py::TestActiveHTTPShortScript::test_persistent_conn Section score: 0 / 2
+Section test errors: incorrect response for multiple requests over a single connection
+
+test_cp2.py::TestActiveHTTPLongScript::test_simple_http_long_injection Section score: 2 / 2
+
+test_cp2.py::TestMitnick::test_mitnick_attack Section score: 17 / 25
+Section test errors: incorrectly predicted ACK ack number
+Section score: 6 / 25
+Section test errors: missing/incorrect SYN+ACK
+Section score: 17 / 25
+Section test errors: incorrectly predicted ACK ack number
+Section score: 6 / 25
+Section test errors: missing/incorrect SYN+ACK
+Section score: 6 / 25
+Section test errors: missing/incorrect SYN+ACK
+Section score: 6 / 25
+Section test errors: missing/incorrect SYN+ACK
+
+
+TOTAL SCORE: 74 / 100

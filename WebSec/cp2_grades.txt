@@ -1,0 +1,36 @@
+zjn1746 |
++=================================================+
+- TOTAL SCORE: 81.99999999999999/100.0
+
+- SQL INJECTION 2.2.1: 20.0/30.0
+	2.2.1.1: 5/5 Success
+	2.2.1.2: 5/5 Success
+	2.2.1.3: 0/10 2.2.1.3.tar.gz Does not exist
+	2.2.1.4: 10/10 
+
+- CSRF 2.2.2: 13.0/20
+	2.2.2.1: 10/10 
+	2.2.2.2: 3/10 CSRF attack is flaky
+
+- XSS 2.2.3: 49.0/50
+	2.2.3.1: 5/5 passed
+	2.2.3.2: 
+		Persistence: 4.5/4.5 Persistence: 
+		Spying: 2.5/2.5 Spying: 
+		Stealth: 1.7999999999999998/2.0 Stealth: URL is wrong: http://bungle-cs461.csl.illinois.edu/ should have been http://bungle-cs461.csl.illinois.edu?q=boo; URL is incorrect: http://bungle-cs461.csl.illinois.edu/search?q=moo; 
+	2.2.3.3: 
+		Persistence: 4.5/4.5 Persistence: 
+		Spying: 2.5/2.5 Spying: 
+		Stealth: 1.7999999999999998/2.0 Stealth: URL is wrong: http://bungle-cs461.csl.illinois.edu/ should have been http://bungle-cs461.csl.illinois.edu?q=boo; URL is incorrect: http://bungle-cs461.csl.illinois.edu/search?q=moo; 
+	2.2.3.4: 
+		Persistence: 4.5/4.5 Persistence: 
+		Spying: 2.5/2.5 Spying: 
+		Stealth: 1.7999999999999998/2.0 Stealth: URL is wrong: http://bungle-cs461.csl.illinois.edu/ should have been http://bungle-cs461.csl.illinois.edu?q=boo; URL is incorrect: http://bungle-cs461.csl.illinois.edu/search?q=moo; 
+	2.2.3.5: 
+		Persistence: 4.5/4.5 Persistence: 
+		Spying: 2.5/2.5 Spying: 
+		Stealth: 1.7999999999999998/2.0 Stealth: URL is wrong: http://bungle-cs461.csl.illinois.edu/ should have been http://bungle-cs461.csl.illinois.edu?q=boo; URL is incorrect: http://bungle-cs461.csl.illinois.edu/search?q=moo; 
+	2.2.3.6: 
+		Persistence: 4.5/4.5 Persistence: 
+		Spying: 2.5/2.5 Spying: 
+		Stealth: 1.7999999999999998/2.0 Stealth: URL is wrong: http://bungle-cs461.csl.illinois.edu/ should have been http://bungle-cs461.csl.illinois.edu?q=boo; URL is incorrect: http://bungle-cs461.csl.illinois.edu/search?q=moo; 

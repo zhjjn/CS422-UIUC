@@ -1,0 +1,7 @@
+###Solution Example: ###
+#zip
+#john
+nmap
+hydra
+ssh
+aircrack-ng

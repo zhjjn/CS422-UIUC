@@ -1,0 +1,5 @@
+###Solution Example: ###
+#filename.ext
+#e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+ssh_host_ecdsa_key.pub
+a885ea67bd73b9a00d85ceb6de9dfba12150cce948b6e1c42f352b8aeaeb2f28

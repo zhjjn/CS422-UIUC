@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: nginx/1.15.10
+Date: Wed, 23 Oct 2019 19:14:20 GMT
+Content-Type: text/html
+Content-Length: 45
+Last-Modified: Fri, 29 Mar 2019 17:10:46 GMT
+Connection: keep-alive
+ETag: "5c9e5196-2d"
+Cache-Control: no-cache
+Set-Cookie: session=OKI8HL1LC2EIY7VO
+Accept-Ranges: bytes
+
+<html><body><h1>It works!</h1></body></html>
